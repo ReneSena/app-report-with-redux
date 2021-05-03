@@ -6,6 +6,10 @@
 	--gray100: #e4e4e4;
 	--gray200: #888888;
 	--font-body: 400 14px/1 'Open Sans', Helvetica, sans-serif;
+	--font-body-semibold: 600 14px/1 'Open Sans', Helvetica, sans-serif;
+	--font-body-bold: 700 14px/1 'Open Sans', Helvetica, sans-serif;
+	--font-title: 700 24px/1 'Open Sans', Helvetica, sans-serif;
+	--font-subTitle: 700 16px/1 'Open Sans', Helvetica, sans-serif;
 }
 
 * {
@@ -29,6 +33,7 @@ input {
 
 body {
 	font: var(--font-body);
+	color: var(--black);
 }
 
 ul,
