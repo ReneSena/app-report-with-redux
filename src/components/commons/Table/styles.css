@@ -1,0 +1,28 @@
+.table__container {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.table__container .table__header .table__row .table__column {
+	text-align: left;
+	padding: 30px 20px;
+	font: var(--font-subTitle);
+}
+
+.table__container .table__header .table__row:first-child {
+	background-color: var(--white);
+}
+
+.table__container .table__body .table__row:nth-child(odd) {
+	background-color: var(--purple100);
+}
+
+.table__container .table__body .table__row:nth-child(even) {
+	background-color: var(--white);
+}
+
+.table__container .table__body .table__row .table__column {
+	padding: 20px 20px;
+	font: var(--font-body-semibold);
+}
