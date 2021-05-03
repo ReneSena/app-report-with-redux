@@ -5,9 +5,16 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-export function InputSearch({ handler, placeholder, id, name, ...props }) {
+export function InputSearch({
+	handlerChange,
+	handleSubmit,
+	placeholder,
+	id,
+	name,
+	...props
+}) {
 	return (
-		<form className="form" autoComplete="off">
+		<form className="form" autoComplete="off" onSubmit={handleSubmit}>
 			<label forhtml={id} className="form__label">
 				<input
 					className="form__input"
@@ -15,8 +22,8 @@ export function InputSearch({ handler, placeholder, id, name, ...props }) {
 					id={id}
 					name={name}
 					placeholder={placeholder}
+					onChange={handlerChange}
 					{...props}
-					onChange={handler}
 				/>
 				<button type="submit" className="form__button">
 					Buscar
@@ -27,7 +34,8 @@ export function InputSearch({ handler, placeholder, id, name, ...props }) {
 }
 
 InputSearch.propTypes = {
-	handler: PropTypes.func.isRequired,
+	handleSubmit: PropTypes.func.isRequired,
+	handlerChange: PropTypes.func.isRequired,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	placeholder: PropTypes.string.isRequired,

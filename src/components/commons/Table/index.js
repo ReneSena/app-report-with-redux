@@ -1,30 +1,58 @@
-import React from 'react';
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
-export function Table() {
+export function Row({ children }) {
+	return <tr className="table__row">{children}</tr>;
+}
+
+export function ColumnHead({ children }) {
+	return <th className="table__column">{children}</th>;
+}
+
+export function Column({ children }) {
+	return <td className="table__column">{children}</td>;
+}
+
+export function HeadColumn({ children }) {
 	return (
-		<table className="table__container">
-			<thead className="table__header">
-				<tr className="table__row">
-					<th className="table__column">Products</th>
-					<th className="table__column">Quantity</th>
-					<th className="table__column">Price</th>
-					<th className="table__column">Type</th>
-					<th className="table__column">Industry</th>
-					<th className="table__column">Origin</th>
-				</tr>
-			</thead>
-			<tbody className="table__body">
-				<tr className="table__row">
-					<td className="table__column">RXW</td>
-					<td className="table__column">100</td>
-					<td className="table__column">R$ 5.40</td>
-					<td className="table__column">M</td>
-					<td className="table__column">Aerospace</td>
-					<td className="table__column">LA</td>
-				</tr>
-			</tbody>
-		</table>
+		<thead className="table__header">
+			<Row>{children}</Row>
+		</thead>
 	);
 }
+
+export function BodyColumn({ children }) {
+	return <tbody className="table__body">{children}</tbody>;
+}
+
+export function Table({ children }) {
+	return <table className="table__container">{children}</table>;
+}
+
+Row.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+ColumnHead.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+Column.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+HeadColumn.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+BodyColumn.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+Table.propTypes = {
+	children: PropTypes.node.isRequired,
+};
+
+export default memo(Table, BodyColumn, HeadColumn, Column, ColumnHead, Row);
