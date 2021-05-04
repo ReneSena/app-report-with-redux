@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { Routes } from './routes';
 import { store } from './store';
 
+import './global/variables.css';
 import './global/global.css';
 
 function App() {

@@ -28,7 +28,11 @@ export function BodyColumn({ children }) {
 }
 
 export function Table({ children }) {
-	return <table className="table__container">{children}</table>;
+	return (
+		<div className="table__scroll">
+			<table className="table__container">{children}</table>
+		</div>
+	);
 }
 
 Row.propTypes = {
