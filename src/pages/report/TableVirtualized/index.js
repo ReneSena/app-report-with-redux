@@ -31,6 +31,6 @@ TableVirtualized.propTypes = {
 	listElements: PropTypes.oneOfType([
 		PropTypes.array,
 		PropTypes.object,
-		PropTypes,
+		PropTypes.func,
 	]).isRequired,
 };
