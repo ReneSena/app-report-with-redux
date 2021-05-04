@@ -2,7 +2,7 @@
 	<img src="banner.svg" height="250px" />
 </div>
 
-#### ▶️ [Acessar aplicação em produção](http://app-youtube-flix-renesena.vercel.app/)
+#### ▶️ [Acessar aplicação em produção](http://app-bank-report.vercel.app/)
 #### ▶️ [Acessar wireframe](https://www.figma.com/file/UgZdjzAtOuurOoOn4AwAe8/Sinqia-Test?node-id=0%3A1)
 
 ## Sumário
@@ -91,7 +91,7 @@ Irá abrir uma nova aba do navegador com o endereço: http://localhost:3000
 <h2 id="ambientes">:earth_americas: Ambientes</h2>
 
 -   Desenvolvimento: http://localhost:3000/
--   Produção: http://app-youtube-flix-renesena.vercel.app/
+-   Produção: http://app-bank-report.vercel.app/
 
 <h2 id="commits">:books: Commits</h2>
 
