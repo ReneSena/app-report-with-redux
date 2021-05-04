@@ -4,9 +4,9 @@ import { InputSearch } from '../../components/Forms/InputSearch';
 import { Layout } from '../../components/Layout';
 import api from '../../data/data_full.json';
 import { loaderReport } from '../../store/modules/report/actions';
+import { TableVirtualized } from './TableVirtualized';
 
 import './style.css';
-import { TableVirtualized } from './TableVirtualized';
 
 export function ReportPage() {
 	const dispatch = useDispatch();
@@ -44,7 +44,9 @@ export function ReportPage() {
 					name="filter"
 					placeholder="Searching for Product or Origin"
 					value={search}
-					handlerChange={event => setSearch(event.target.value)}
+					handlerChange={event =>
+						setSearch(event.target.value.toUpperCase())
+					}
 					handleSubmit={event => handleSubmit(event)}
 				/>
 			</section>

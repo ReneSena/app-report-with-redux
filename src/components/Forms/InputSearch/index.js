@@ -15,9 +15,9 @@ export function InputSearch({
 }) {
 	return (
 		<form className="form" autoComplete="off" onSubmit={handleSubmit}>
-			<label forhtml={id} className="form__label">
+			<label htmlFor={id} className="form__label">
 				<input
-					className="form__input"
+					className="form__input--search"
 					type="search"
 					id={id}
 					name={name}
