@@ -1,0 +1,15 @@
+:root {
+	--white: #ffffff;
+	--black: #222222;
+	--purple100: #f2f7ff;
+	--purple200: #4f59ad;
+	--gray100: #e4e4e4;
+	--gray200: #888888;
+
+	--fontFamily: 'Open Sans', Helvetica, sans-serif;
+	--font-body: 400 14px/1 var(--fontFamily);
+	--font-body-semibold: 600 14px/1 var(--fontFamily);
+	--font-body-bold: 700 14px/1 var(--fontFamily);
+	--font-title: 700 24px/1 var(--fontFamily);
+	--font-subTitle: 700 16px/1 var(--fontFamily);
+}
