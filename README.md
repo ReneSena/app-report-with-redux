@@ -21,9 +21,8 @@ O Bank Report é uma aplicação que disponibiliza uma base de dados focadas em 
 -   [Node](https://nodejs.org/en/)
 -   [Yarn](https://yarnpkg.com/)
 -   [Git](https://git-scm.com/)
--   Editor de código
+-   [Editor de código - Vscode](https://code.visualstudio.com/)
 
-<hr />
 
 ## <h2 id="tecnologias">:hammer_and_wrench: Tecnologias que estão sendo utilizadas no projeto</h2>
 
@@ -31,6 +30,7 @@ O Bank Report é uma aplicação que disponibiliza uma base de dados focadas em 
 -   [Redux](https://redux.js.org/)
 -   [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
 -   [Function Components](https://pt-br.reactjs.org/docs/components-and-props.html)
+-   [React Virtualized](https://bvaughn.github.io/react-virtualized/#/components/List)
 
 ## <h2 id="padrao-de-codigo">:desktop_computer: Padrão de código</h2>
 
@@ -71,11 +71,18 @@ Isso fará com que o vscode seja aberto na pasta selecionada.
 
 #### :one: Instalando dependências do projeto
 
-Depois de ter realizado o processo de clonagem, é necessário instalar as dependências do projeto, para isso em seu terminal na pasta do projeto rode:
+Depois de ter realizado o processo de clonagem, é necessário instalar as dependências do projeto, para isso, em seu terminal na pasta do projeto rode:
 
 ```bash
 yarn install
 ```
+
+Em seguida, na pasta do projeto, utilize o comando abaixo para visualizar o projeto em desenvolvimento: 
+```bash
+yarn start
+```
+
+Irá abrir uma nova aba do navegador com o endereço: http://localhost:3000
 
 ## <h2 id="ambientes">:earth_americas: Ambientes</h2>
 
