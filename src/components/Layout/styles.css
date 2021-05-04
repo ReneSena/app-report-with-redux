@@ -1,6 +1,6 @@
 #root {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
@@ -8,5 +8,5 @@
 }
 
 #root main {
-	margin: 0 50px;
+	margin: 40px;
 }

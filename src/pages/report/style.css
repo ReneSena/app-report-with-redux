@@ -1,0 +1,10 @@
+.section__filter {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+}
+
+.section__data {
+	width: 100%;
+	height: calc(100vh - 200px);
+}
