@@ -1,0 +1,25 @@
+.button__base {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	padding: 0 20px;
+	font: var(--font-body-semibold);
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	transition: all 200ms linear;
+	background-color: var(--purple200);
+	color: var(--white);
+}
+
+.button__base[disabled] {
+	background-color: var(--gray100);
+	pointer-events: none;
+}
+
+.button__base:hover {
+	opacity: 0.8;
+}
