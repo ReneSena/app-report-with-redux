@@ -7,10 +7,13 @@ import { loaderReport } from '../../store/modules/report/actions';
 import { TableVirtualized } from './TableVirtualized';
 
 import './style.css';
+import { Feedback } from './Feedback';
 
 export function ReportPage() {
 	const dispatch = useDispatch();
 	const { list } = useSelector(state => state.report);
+	const { name } = useSelector(state => state.user);
+
 	const [search, setSearch] = React.useState('');
 
 	React.useEffect(() => {
@@ -39,6 +42,7 @@ export function ReportPage() {
 	return (
 		<Layout>
 			<section className="section__filter">
+				<h1 className="title">Olá, {name}!</h1>
 				<InputSearch
 					id="filter"
 					name="filter"
@@ -50,7 +54,9 @@ export function ReportPage() {
 					handleSubmit={event => handleSubmit(event)}
 				/>
 			</section>
-
+			{list.length === 0 && (
+				<Feedback>Nenhum resultado encontrado.</Feedback>
+			)}
 			<section className="section__data">
 				<TableVirtualized
 					listLength={list.length}

@@ -21,6 +21,7 @@ input {
 body {
 	font: var(--font-body);
 	color: var(--black);
+	min-width: 1024px;
 }
 
 ul,

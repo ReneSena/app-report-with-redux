@@ -1,7 +1,11 @@
 .section__filter {
 	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 30px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.section__filter .title {
+	font: var(--font-title);
 }
 
 .section__data {
