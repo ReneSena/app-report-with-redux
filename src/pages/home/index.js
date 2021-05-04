@@ -28,6 +28,7 @@ export function HomePage() {
 		<Layout header={false} footer={false}>
 			<div className="container__page">
 				<form
+					autoComplete="off"
 					className="form__user"
 					onSubmit={event => handleSubmitUser(event)}>
 					<legend className="form__legend">

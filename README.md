@@ -23,7 +23,6 @@ O Bank Report é uma aplicação que disponibiliza uma base de dados focadas em 
 -   [Git](https://git-scm.com/)
 -   [Editor de código - Vscode](https://code.visualstudio.com/)
 
-
 ## <h2 id="tecnologias">:hammer_and_wrench: Tecnologias que estão sendo utilizadas no projeto</h2>
 
 -   [React](https://pt-br.reactjs.org/)
@@ -77,7 +76,8 @@ Depois de ter realizado o processo de clonagem, é necessário instalar as depen
 yarn install
 ```
 
-Em seguida, na pasta do projeto, utilize o comando abaixo para visualizar o projeto em desenvolvimento: 
+Em seguida, na pasta do projeto, utilize o comando abaixo para visualizar o projeto em desenvolvimento:
+
 ```bash
 yarn start
 ```
