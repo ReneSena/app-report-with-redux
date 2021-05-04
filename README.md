@@ -60,7 +60,7 @@ Abra seu terminal e faça o clone do projeto em um diretório da sua máquina, p
 git clone https://github.com/ReneSena/app-report-with-redux.git ou git@github.com:ReneSena/app-report-with-redux.git
 ```
 
-Após o download do projeto ser finalizado, a pasta front-saas-backoffice estará disponível no diretório que foi realizado o download.
+Após o download do projeto ser finalizado, a pasta app-report-with-redux estará disponível no diretório que foi realizado o download.
 
 ## :rocket: Como executar o projeto?
 
