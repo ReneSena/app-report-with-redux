@@ -5,6 +5,8 @@
 	align-items: center;
 	justify-content: center;
 	background-color: var(--gray100);
+	position: fixed;
+	bottom: 0;
 }
 
 .footer__description {
